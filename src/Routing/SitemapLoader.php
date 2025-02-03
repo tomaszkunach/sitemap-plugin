@@ -26,7 +26,7 @@ final class SitemapLoader extends Loader implements RouteLoaderInterface
         parent::__construct($env);
     }
 
-    public function load($resource, $type = null)
+    public function load(mixed $resource, $type = null): mixed
     {
         $routes = new RouteCollection();
 
